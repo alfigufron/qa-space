@@ -1,3 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 $primary-font: 'Poppins', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}

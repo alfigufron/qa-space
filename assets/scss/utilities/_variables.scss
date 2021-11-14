@@ -6,3 +6,17 @@ $background-color: #F4F6FB;
 $primary-color: #2447F9;
 $secondary-color: #FC7A46;
 $warning-color: #FFC700;
+
+$colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "warning": $warning-color,
+  "dark": $dark-color,
+  "light": $light-color,
+);
+
+@each $name, $hex in $colors {
+  .text-#{$name} {
+    color: $hex;
+  }
+}

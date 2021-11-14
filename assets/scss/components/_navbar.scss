@@ -1,0 +1,141 @@
+#navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+
+  #nav-content {
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    .nav-menu {
+      display: none;
+      align-items: center;
+  
+      .nav-item {
+        margin: 0 32px;
+        font-size: 18px;
+  
+        a {
+          color: rgba($color: $dark-color, $alpha: .6);
+          transition: all .4s;
+  
+          &:hover {
+            color: $dark-color;
+          }
+        }
+  
+        &.active {
+          a {
+            font-weight: 600;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  
+    .nav-search {
+      display: none;
+
+      .form-search {
+        position: relative;
+    
+        input {
+          padding: 14px 38px 14px 18px;
+          border: 1.8px rgba($color: $primary-color, $alpha: .6) solid;
+          border-radius: 30px;
+          font-size: 16px;
+          transition: all .4s;
+          
+          &:active, &:focus, &:focus-visible {
+            border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
+            outline: none;
+          }
+        }
+    
+        button {
+          position: absolute;
+          right: 7px;
+          top: 7px;
+          background-color: $primary-color;
+          border: none;
+          padding: 8px 10px 6px 9px;
+          border-radius: 50%;
+    
+          img {
+            width: 16px;
+          }
+        }
+      }
+    }
+  
+    .nav-toggle {
+      display: block;
+  
+      button {
+        background: none;
+        border: none;
+      }
+    }
+
+    &.mobile-toggled {
+      background-color: $light-color;
+      
+      .nav-menu {
+        background-color: $light-color;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        top: 100px;
+        left: 0;
+        
+        .nav-item {
+          padding-bottom: 20px;
+        }
+      }
+      
+      .nav-search {
+        display: block;
+        background-color: $light-color;
+        
+        .form-search {
+          background-color: $light-color;
+          position: absolute;
+          width: 100vw;
+          top: 286px;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 30px;
+
+          input {
+            width: 100%;
+            margin: 0 60px;
+          }
+
+          button {
+            right: 72px;
+          }
+        }
+      }
+    }
+  
+    @media #{$breakpoint-lg} {
+      .nav-menu {
+        display: flex;
+      }
+  
+      .nav-search {
+        display: block;
+      }
+  
+      .nav-toggle {
+        display: none;
+      }
+    }
+  }
+}

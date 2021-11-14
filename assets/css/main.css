@@ -1,17 +1,221 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.text-primary {
+  color: #2447F9;
+}
+
+.text-secondary {
+  color: #FC7A46;
+}
+
+.text-warning {
+  color: #FFC700;
+}
+
+.text-dark {
+  color: #34364A;
+}
+
+.text-light {
+  color: #FFFFFF;
+}
+
+#question-page {
+  min-height: 100vh;
+  background-color: #F4F6FB;
+}
+
+#navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+#navbar #nav-content {
+  padding: 20px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+#navbar #nav-content .nav-menu {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar #nav-content .nav-menu .nav-item {
+  margin: 0 32px;
+  font-size: 18px;
+}
+
+#navbar #nav-content .nav-menu .nav-item a {
+  color: rgba(52, 54, 74, 0.6);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#navbar #nav-content .nav-menu .nav-item a:hover {
+  color: #34364A;
+}
+
+#navbar #nav-content .nav-menu .nav-item.active a {
+  font-weight: 600;
+  color: #2447F9;
+}
+
+#navbar #nav-content .nav-search {
+  display: none;
+}
+
+#navbar #nav-content .nav-search .form-search {
+  position: relative;
+}
+
+#navbar #nav-content .nav-search .form-search input {
+  padding: 14px 38px 14px 18px;
+  border: 1.8px rgba(36, 71, 249, 0.6) solid;
+  border-radius: 30px;
+  font-size: 16px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#navbar #nav-content .nav-search .form-search input:active, #navbar #nav-content .nav-search .form-search input:focus, #navbar #nav-content .nav-search .form-search input:focus-visible {
+  border: 1.8px #2447f9 solid;
+  outline: none;
+}
+
+#navbar #nav-content .nav-search .form-search button {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background-color: #2447F9;
+  border: none;
+  padding: 8px 10px 6px 9px;
+  border-radius: 50%;
+}
+
+#navbar #nav-content .nav-search .form-search button img {
+  width: 16px;
+}
+
+#navbar #nav-content .nav-toggle {
+  display: block;
+}
+
+#navbar #nav-content .nav-toggle button {
+  background: none;
+  border: none;
+}
+
+#navbar #nav-content.mobile-toggled {
+  background-color: #FFFFFF;
+}
+
+#navbar #nav-content.mobile-toggled .nav-menu {
+  background-color: #FFFFFF;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  top: 100px;
+  left: 0;
+}
+
+#navbar #nav-content.mobile-toggled .nav-menu .nav-item {
+  padding-bottom: 20px;
+}
+
+#navbar #nav-content.mobile-toggled .nav-search {
+  display: block;
+  background-color: #FFFFFF;
+}
+
+#navbar #nav-content.mobile-toggled .nav-search .form-search {
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 100vw;
+  top: 286px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+#navbar #nav-content.mobile-toggled .nav-search .form-search input {
+  width: 100%;
+  margin: 0 60px;
+}
+
+#navbar #nav-content.mobile-toggled .nav-search .form-search button {
+  right: 72px;
+}
+
+@media only screen and (min-width: 1200px) {
+  #navbar #nav-content .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #navbar #nav-content .nav-search {
+    display: block;
+  }
+  #navbar #nav-content .nav-toggle {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 100%;
 }
 
 ::-moz-selection {
-  background-color: #2447F9;
-  color: #FFFFFF;
+  background-color: #FC7A46;
+  color: #2447F9;
 }
 
 ::selection {
-  background-color: #2447F9;
-  color: #FFFFFF;
+  background-color: #FC7A46;
+  color: #2447F9;
+}
+
+a {
+  text-decoration: none;
+  color: #34364A;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
