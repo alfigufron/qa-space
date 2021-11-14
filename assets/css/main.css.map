@@ -1,10 +1,13 @@
 {
     "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,yGAAI;ADGZ,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,ECJE,SAAS,EAAE,UAAU;CDKnC;;AAED,AAAA,WAAW,CAAC;EACV,gBAAgB,EELF,OAAO;EFMrB,KAAK,EEVO,OAAO;CFWpB",
+    "mappings": "ACAA,OAAO,CAAC,yGAAI;ADIZ,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,ECLE,SAAS,EAAE,UAAU;CDMnC;;AAED,AAAA,WAAW,CAAC;EACV,gBAAgB,EENF,OAAO;EFOrB,KAAK,EEXO,OAAO;CFYpB",
     "sources": [
         "../scss/main.scss",
         "../scss/base/_typography.scss",
-        "../scss/utilities/_variables.scss"
+        "../scss/utilities/_variables.scss",
+        "../scss/pages/_modules.scss",
+        "../scss/pages/_landing_page.scss",
+        "../scss/pages/_question_page.scss"
     ],
     "names": [],
     "file": "main.css"
