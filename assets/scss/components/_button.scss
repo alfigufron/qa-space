@@ -1,0 +1,34 @@
+.btn {
+	border-radius: 50px;
+	padding: 13px 63px;
+}
+
+.btn-sm {
+	border-radius: 50px;
+	padding: 10px 40px;
+}
+
+.btn-secondary {
+	background-color: rgba($secondary-color, 0.1);
+	color: $secondary-color;
+}
+
+.btn-primary {
+	background-color: $primary-color;
+	color: $light-color;
+}
+
+.btn-netral {
+	border: 1px solid $primary-color;
+	color: $primary-color;
+}
+
+.btn-md {
+	border-radius: 50px;
+	padding: 12px 50px;
+}
+
+.btn-question {
+	background-color: rgba($primary-color, 0.1);
+	color: $primary-color;
+}

@@ -1,13 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Brainly Reborn</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home | Brainly Reborn</title>
 
-  <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-  <script src="./assets/js/main.js"></script>
-</body>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body id="landing_page">
+		<div id="navbar">
+			<div id="nav-content">
+				<div class="nav-brand">
+					<h2 class="text-primary">
+						Brainly <span class="text-secondary">Reborn</span>
+					</h2>
+				</div>
+
+				<div class="nav-menu">
+					<div class="nav-item active">
+						<a href="#">Beranda</a>
+					</div>
+
+					<div class="nav-item">
+						<a href="#">Kategori</a>
+					</div>
+
+					<div class="nav-item">
+						<a href="#">Tentang</a>
+					</div>
+
+					<div class="nav-item">
+						<a href="#">Pertanyaan</a>
+					</div>
+				</div>
+
+				<div class="nav-search">
+					<div class="form-search">
+						<input type="text" placeholder="Apa pertanyaan kamu?" />
+						<button type="button">
+							<img src="./assets/img/icon/search.svg" alt="search-icon" />
+						</button>
+					</div>
+				</div>
+
+				<div class="nav-toggle">
+					<button id="btn-toggle">
+						<img src="./assets/img/icon/menu-3-line.svg" alt="menu-icon" />
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section id="beranda" class="header">
+				<div class="left">
+					<a href="#" class="btn-sm btn-secondary">Ayo Bertanya</a>
+					<h1 class="heading">Jangan Malu Untuk Bertanya</h1>
+					<p class="subheading">
+						Cari jawaban dari pertanyaan yang kamu cari saat ini dengan mudah
+						dan cepat dari seluruh dunia
+					</p>
+					<a href="#" class="btn btn-primary">Daftar</a>
+					<a href="#" class="btn btn-netral">Masuk</a>
+				</div>
+				<div class="right">
+					<img src="./assets/img/landing-page/header.svg" alt="" />
+				</div>
+			</section>
+
+			<div class="ctr">
+				<img src="./assets/img/ctn/shill-share.svg" alt="Skill Share" />
+				<img src="./assets/img/ctn/udemy.svg" alt="Udemy" />
+				<img src="./assets/img/ctn/duolingo.svg" alt="Duolingo" />
+				<img src="./assets/img/ctn/coursera.svg" alt="coursera" />
+			</div>
+
+			<section id="category" class="category">
+				<div class="left">
+					<img src="./assets/img/landing-page/category.svg" alt="" />
+				</div>
+				<div class="right">
+					<h2 class="category-title">
+						Temukan Kategori Pertanyaan yang Kamu Cari
+					</h3>
+					<div class="category-card">
+						<div class="card">
+              <div class="card-header">
+                <img
+                  src="./assets/img/icon/sbmptn.svg"
+                  alt="SBMTPN"
+                  class="card-icon"
+                />
+                <p class="card-title">SBMTPN</p>
+              </div>
+							<div class="card-body">
+                <p class="card-text">
+                  Seleksi bersama dalam penerimaan mahasiswa baru di lingkungan
+                  perguruan tinggi negeri.
+                </p>
+              </div>
+						</div>
+
+						<div class="card">
+              <div class="card-header">
+                <img
+                  src="./assets/img/icon/umum.svg"
+                  alt="Pengetahuan Umum"
+                  class="card-icon"
+                />
+                <p class="card-title">Pengetahuan Umum</p>
+              </div>
+							<div class="card-body">
+                <p class="card-text">
+                  Pengetahuan yang diketahui oleh kebanyakan orang, biasanya
+                  berhubungan umum digunakan.
+                </p>
+              </div>
+						</div>
+
+						<div class="card">
+              <div class="card-header">
+                <img
+                  src="./assets/img/icon/un.svg"
+                  alt="Ujian Nasional"
+                  class="card-icon"
+                />
+                <p class="card-title">Ujian Nasional</p>
+              </div>
+							<div class="card-body">
+                <p class="card-text">
+                  Sistem evaluasi standar pendidikan nasional antar daerah yang
+                  dilakukan oleh Pusat Penilaian
+                </p>
+              </div>
+						</div>
+
+						<div class="card">
+              <div class="card-header">
+                <img
+                  src="./assets/img/icon/ti.svg"
+                  alt="Teknologi Informasi"
+                  class="card-icon"
+                />
+                <p class="card-title">Teknologi Informasi</p>
+              </div>
+							<div class="card-body">
+                <p class="card-text">
+                  Teknologi membantu manusia dalam membuat, mengubah, menyebarkan
+                  informasi.
+                </p>
+              </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+      <section id="about" class="about">
+        <div class="left">
+          <p class="about-subtitle">
+            About
+          </p>
+          <h2 class="about-title">
+            Membantu Pertanyaan Orang Lain
+          </h2>
+          <p class="about-text">
+            Mengenai semua hal pertanyaan yang mereka cari saat ini sehingga menemukan jawabannya
+          </p>
+          <a href="#" class="btn btn-primary">Tanya Sekarang</a>
+          <div class="about-question">
+            <img src="./assets/img/icon/arrow.svg" class="arrow" alt="About">
+            <img src="./assets/img/icon/question.svg" class="question" alt="About">
+          </div>
+        </div>
+        <div class="right">
+          <img src="./assets/img/landing-page/about.svg" alt="About">
+        </div>
+      </section>
+
+
+      <section id="question" class="question">
+        <div class="question-header">
+          <h3 class="question-title">
+            Pertanyaan
+          </h3>
+          <p class="question-subtitle">
+            Pertanyaan yang sering muncul
+          </p>
+        </div>
+        <div class="question-body">
+          <div class="card">
+            <div class="card-header">
+              <img src="./assets/img/landing-page/question-profile.svg" alt="">
+              <div class="detail">
+                <p class="question-name">
+                  Rizka Amalia
+                </p>
+                <p class="question-position">
+                  Penanya
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Apa yang dimaksud dengan IoT (Internet of Things) dan jelaskan contohnya?
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-md btn-question">
+                Jawaban
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img src="./assets/img/landing-page/question-profile.svg" alt="">
+              <div class="detail">
+                <p class="question-name">
+                  Rizka Amalia
+                </p>
+                <p class="question-position">
+                  Penanya
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Apa yang dimaksud dengan IoT (Internet of Things) dan jelaskan contohnya?
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-md btn-question">
+                Jawaban
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img src="./assets/img/landing-page/question-profile.svg" alt="">
+              <div class="detail">
+                <p class="question-name">
+                  Rizka Amalia
+                </p>
+                <p class="question-position">
+                  Penanya
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Apa yang dimaksud dengan IoT (Internet of Things) dan jelaskan contohnya?
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-md btn-question">
+                Jawaban
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="question-footer">
+          <a href="#" class="btn btn-netral">Selengkapnya</a>
+        </div>
+      </section>
+
+      <section id="review" class="review">
+        <div class="review-header">
+          <h3 class="review-title">
+            Review
+          </h3>
+          <p class="review-subtitle">
+            Lebih dari 17.000 penanya telah terbantu
+          </p>
+        </div>
+        <div class="review-body">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-left">
+                <h3 class="review-rating">
+                  4.8
+                </h3>
+                <!-- Star here -->
+              </div>
+              <div class="card-right">
+                <p class="review-icon">“</p>
+                <div class="review-questioner">
+                  <img src="./assets/img/landing-page/question-profile.svg" alt="">
+                  <div class="detail">
+                    <p class="question-name">
+                      Rizka Amalia
+                    </p>
+                    <p class="question-position">
+                      Penanya
+                    </p>
+                  </div>
+                </div>
+                <div class="review-content">
+                  <p class="review-text">Saya sudah banyak mencari tentang pertanyaan yang saya cari saat ini, dan di Brainly Reborn ini saya mendapatkan jawaban yang akurat dan simple.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+		</div>
+		<script src="./assets/js/main.js"></script>
+	</body>
 </html>
