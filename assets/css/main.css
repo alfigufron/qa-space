@@ -4,28 +4,301 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-primary {
-  color: #2447F9;
+  color: #2447f9;
 }
 
 .text-secondary {
-  color: #FC7A46;
+  color: #fc7a46;
 }
 
 .text-warning {
-  color: #FFC700;
+  color: #ffc700;
+}
+
+.text-success {
+  color: #22c58b;
 }
 
 .text-dark {
-  color: #34364A;
+  color: #34364a;
 }
 
 .text-light {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.text-grey {
+  color: #888888;
+}
+
+#landing_page {
+  background-color: #f4f6fb;
+  min-height: 100vh;
+}
+
+#landing_page section {
+  padding: 5rem 0;
+}
+
+#landing_page .container {
+  padding: 0.3rem 60px;
+}
+
+#landing_page .header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+#landing_page .header .left {
+  margin-top: 6rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+#landing_page .header .left .heading {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  color: #34364a;
+  margin: 0;
+  margin-top: 30px;
+}
+
+#landing_page .header .left .subheading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  letter-spacing: 5%;
+  color: #34364a;
+  margin-bottom: 40px;
+}
+
+#landing_page .header .left .btn {
+  margin-right: 20px;
+}
+
+#landing_page .header .right {
+  position: relative;
+}
+
+#landing_page .header .right img {
+  margin: 20px auto;
+  width: 80%;
+  display: block;
+}
+
+#landing_page .ctr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+#landing_page .ctr img {
+  margin: 0 25px;
+}
+
+#landing_page .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+#landing_page .category .right .category-title {
+  font-size: 2.1rem;
+  color: #34364a;
+  margin-top: 0;
+}
+
+#landing_page .category .right .category-card {
+  display: -ms-grid;
+  display: grid;
+  gap: 13px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#landing_page .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 150px;
+  position: relative;
+}
+
+#landing_page .about .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+#landing_page .about .left .about-subtitle {
+  color: #22c58b;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+#landing_page .about .left .about-title {
+  color: #34364a;
+  font-size: 2rem;
+}
+
+#landing_page .about .left .about-text {
+  color: #888888;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-right: 120px;
+  margin-bottom: 50px;
+}
+
+#landing_page .about .left .about-question {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 2rem;
+  left: 18rem;
+}
+
+#landing_page .about .left .about-question .arrow {
+  width: 40%;
+}
+
+#landing_page .about .left .about-question .question {
+  width: 60%;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+#landing_page .about .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  text-align: end;
+}
+
+#landing_page .about .right img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#landing_page .question .question-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#landing_page .question .question-header .question-title {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #34364a;
+}
+
+#landing_page .question .question-header .question-subtitle {
+  margin: 0;
+  color: #888888;
+  font-weight: 400;
+}
+
+#landing_page .question .question-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+#landing_page .question .question-body .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#landing_page .question .question-body .card .card-header .detail p {
+  margin: 0;
+}
+
+#landing_page .question .question-body .card .card-header .detail .question-name {
+  font-weight: 600;
+}
+
+#landing_page .question .question-body .card .card-header .detail .question-position {
+  font-weight: 400;
+  color: #888888;
+  font-size: 0.8rem;
+}
+
+#landing_page .question .question-body .card .card-body {
+  margin: 40px 0 60px 0;
+}
+
+#landing_page .question .question-body .card .card-body .card-text {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #34364a;
+}
+
+#landing_page .question .question-body .card .card-footer {
+  margin: 30px 0;
+}
+
+#landing_page .question .question-footer {
+  margin: 80px 0;
+  text-align: center;
+}
+
+#landing_page .review .review-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#landing_page .review .review-header .review-title {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #34364a;
+}
+
+#landing_page .review .review-header .review-subtitle {
+  margin: 0;
+  color: #888888;
+  font-weight: 400;
 }
 
 #question-page {
   min-height: 100vh;
-  background-color: #F4F6FB;
+  background-color: #f4f6fb;
 }
 
 #navbar {
@@ -68,12 +341,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar #nav-content .nav-menu .nav-item a:hover {
-  color: #34364A;
+  color: #34364a;
 }
 
 #navbar #nav-content .nav-menu .nav-item.active a {
   font-weight: 600;
-  color: #2447F9;
+  color: #2447f9;
 }
 
 #navbar #nav-content .nav-search {
@@ -102,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   right: 7px;
   top: 7px;
-  background-color: #2447F9;
+  background-color: #2447f9;
   border: none;
   padding: 8px 10px 6px 9px;
   border-radius: 50%;
@@ -122,11 +395,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar #nav-content.mobile-toggled {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #navbar #nav-content.mobile-toggled .nav-menu {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,11 +419,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar #nav-content.mobile-toggled .nav-search {
   display: block;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #navbar #nav-content.mobile-toggled .nav-search .form-search {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: absolute;
   width: 100vw;
   top: 286px;
@@ -187,6 +460,63 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card .card-header {
+  margin: 0 0 8px 0;
+}
+
+.card .card-header .card-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.card .card-body .card-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 13px 63px;
+}
+
+.btn-sm {
+  border-radius: 50px;
+  padding: 10px 40px;
+}
+
+.btn-secondary {
+  background-color: rgba(252, 122, 70, 0.1);
+  color: #fc7a46;
+}
+
+.btn-primary {
+  background-color: #2447f9;
+  color: #ffffff;
+}
+
+.btn-netral {
+  border: 1px solid #2447f9;
+  color: #2447f9;
+}
+
+.btn-md {
+  border-radius: 50px;
+  padding: 12px 50px;
+}
+
+.btn-question {
+  background-color: rgba(36, 71, 249, 0.1);
+  color: #2447f9;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -196,18 +526,18 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #FC7A46;
-  color: #2447F9;
+  background-color: #fc7a46;
+  color: #2447f9;
 }
 
 ::selection {
-  background-color: #FC7A46;
-  color: #2447F9;
+  background-color: #fc7a46;
+  color: #2447f9;
 }
 
 a {
   text-decoration: none;
-  color: #34364A;
+  color: #34364a;
 }
 
 button {

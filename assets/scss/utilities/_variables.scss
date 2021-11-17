@@ -1,22 +1,26 @@
-$dark-color: #34364A;
-$light-color: #FFFFFF;
+$dark-color: #34364a;
+$grey-color: #888888;
+$light-color: #ffffff;
 
-$background-color: #F4F6FB;
+$background-color: #f4f6fb;
 
-$primary-color: #2447F9;
-$secondary-color: #FC7A46;
-$warning-color: #FFC700;
+$primary-color: #2447f9;
+$secondary-color: #fc7a46;
+$warning-color: #ffc700;
+$success-color: #22c58b;
 
 $colors: (
-  "primary": $primary-color,
-  "secondary": $secondary-color,
-  "warning": $warning-color,
-  "dark": $dark-color,
-  "light": $light-color,
+	"primary": $primary-color,
+	"secondary": $secondary-color,
+	"warning": $warning-color,
+	"success": $success-color,
+	"dark": $dark-color,
+	"light": $light-color,
+	"grey": $grey-color,
 );
 
 @each $name, $hex in $colors {
-  .text-#{$name} {
-    color: $hex;
-  }
+	.text-#{$name} {
+		color: $hex;
+	}
 }
