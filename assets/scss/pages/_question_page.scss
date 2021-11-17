@@ -1,4 +1,53 @@
 #question-page {
+  width: 100%;
   min-height: 100vh;
   background-color: $background-color;
+  
+  #question-list {
+    width: 100%;
+    padding-top: 200px;
+
+    .header {
+      text-align: center;
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 16px;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px 60px 0 60px;
+
+      .post, .recommended {
+        width: 100%;
+      }
+
+      .post {
+        height: 100px;
+        background-color: red;
+      }
+
+      .recommended {
+        height: 100px;
+        background-color: blue;
+      }
+    }
+
+    @media #{$breakpoint-md} {
+      .content {
+        flex-direction: row;
+
+        .post {
+          width: 65%;
+        }
+
+        .recommended {
+          width: 35%;
+        }
+      }
+    }
+  }
 }

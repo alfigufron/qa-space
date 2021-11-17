@@ -5,7 +5,7 @@
   z-index: 10;
 
   #nav-content {
-    padding: 20px 60px;
+    padding: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +89,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         top: 100px;
         left: 0;
         
@@ -105,7 +105,7 @@
         .form-search {
           background-color: $light-color;
           position: absolute;
-          width: 100vw;
+          width: 100%;
           top: 286px;
           left: 0;
           display: flex;
@@ -136,6 +136,12 @@
       .nav-toggle {
         display: none;
       }
+    }
+  }
+
+  @media #{$breakpoint-md} {
+    #nav-content {
+      padding: 20px 60px;
     }
   }
 }
