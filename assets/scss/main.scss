@@ -5,29 +5,33 @@
 @import "./pages/modules";
 @import "./components/modules";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: $primary-font;
-  position: relative;
-  width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $primary-font;
+	position: relative;
+	width: 100%;
 }
 
 ::selection {
-  background-color: $secondary-color;
-  color: $primary-color;
+	background-color: $secondary-color;
+	color: $primary-color;
 }
 
 a {
-  text-decoration: none;
-  color: $dark-color;
+	text-decoration: none;
+	color: $dark-color;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 section {
-  width: 100%;
-  min-height: 100vh;
+	width: 100%;
+	min-height: 100vh;
 }
