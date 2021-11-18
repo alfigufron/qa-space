@@ -18,7 +18,7 @@
 
     .content {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       padding: 20px 60px 0 60px;
 
       .post, .recommended {
@@ -26,13 +26,294 @@
       }
 
       .post {
-        height: 100px;
-        background-color: red;
+        margin-bottom: 20px;
+
+        .new-post {
+          .card {
+            display: flex;
+            align-items: center;
+
+            .profile-picture {
+              img {
+                border-radius: 50%;
+                width: 70px;
+              }
+            }
+
+            #form-new-post {
+              display: flex;
+              flex-direction: column;
+              align-items: stretch;
+              margin-left: 20px;
+              width: 100%;
+
+              .form-input {
+                flex: 1;
+                margin-right: 0;
+
+                input {
+                  width: 100%;
+                  box-sizing: border-box;
+                  border: none;
+                  border-radius: 20px;
+                  padding: 10px 20px;
+                  background-color: #F3F3F3;
+                  height: 44px;
+                  border: 1.8px transparent solid;
+                  transition: all .4s;
+
+                  &:active, &:focus, &:focus-visible {
+                    border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
+                    outline: none;
+                  }
+                }
+              }
+
+              .form-button {
+                margin-top: 20px;
+                width: 100%;
+
+                button {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .question-post {
+          margin-top: 20px;
+
+          &.detail {
+            margin-top: 0;
+          }
+
+          .card {
+            padding: 40px;
+
+            .author {
+              display: flex;
+              align-items: center;
+  
+              .profile-picture {
+                img {
+                  border-radius: 50%;
+                  width: 70px;
+                }
+              }
+  
+              .detail-profile {
+                margin-left: 20px;
+  
+                .name {
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &.detail {
+              margin-top: 40px;
+              border-bottom: 2px rgba($color: $dark-color, $alpha: .4) solid;
+              padding-bottom: 40px;
+
+              .icon {
+                a {
+                  display: flex;
+                  align-items: center;
+                  font-weight: 500;
+
+                  img {
+                    margin-right: 10px;
+                  }
+
+                  span {
+                    display: none;
+                  }
+                }
+
+                #like {
+                  &.liked {
+                    color: #FF0000;
+                  }
+                }
+              }
+            }
+
+            .rating {
+              h4 {
+                display: flex;
+                
+                img {
+                  margin-right: 6px;
+                } 
+              }
+            }
+
+            @media #{$breakpoint-sm} {
+              &.detail {
+                .icon {
+                  a {
+                    span {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .comment {
+            margin-top: 40px;
+
+            .new-comment {
+              display: flex;
+              align-items: center;
+
+              .profile-picture {
+                img {
+                  border-radius: 50%;
+                  width: 70px;
+                }
+              }
+  
+              #form-new-comment {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin-left: 20px;
+                width: 100%;
+  
+                .form-input {
+                  flex: 1;
+                  margin-right: 0;
+  
+                  input {
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    background-color: #F3F3F3;
+                    height: 44px;
+                    border: 1.8px transparent solid;
+                    transition: all .4s;
+  
+                    &:active, &:focus, &:focus-visible {
+                      border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
+                      outline: none;
+                    }
+                  }
+                }
+  
+                .form-button {
+                  margin-top: 20px;
+                  width: 100%;
+  
+                  button {
+                    width: 100%;
+                  }
+                }
+
+                @media #{$breakpoint-md} {
+                  flex-direction: row;
+
+                  .form-input {
+                    margin-right: 24px;
+                  }
+    
+                  .form-button {
+                    width: auto;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+
+            .post-comment {
+              margin-top: 40px;
+
+              .author {
+                .profile-picture {
+                  img {
+                    width: 60px;
+                  }
+                }
+
+                .detail-profile {
+                  span {
+                    font-size: 14px;
+                  }
+                }
+              }
+
+              .text {
+                margin-top: 10px;
+                line-height: 1.8;
+              }
+            }
+          }
+        }
       }
 
       .recommended {
-        height: 100px;
-        background-color: blue;
+        text-align: center;
+
+        .card {
+          padding: 40px;
+  
+          .title {
+            border-bottom: 2px $dark-color solid;
+            padding-bottom: 16px;
+            margin: 10px 0;
+          }
+  
+          .list {
+            text-align: left;
+  
+            .question {
+              display: block;
+              margin-top: 34px;
+
+              &:hover {
+                h3 {
+                  color: $primary-color;
+                }
+              }
+
+              .author {
+                display: flex;
+                align-items: center;
+
+                .profile-picture {
+                  img {
+                    border-radius: 50%;
+                    width: 70px;
+                  }
+                }
+
+                .detail-profile {
+                  margin-left: 20px;
+
+                  .name {
+                    margin: 0;
+                  }
+                }
+              }
+
+              h3 {
+                margin: 0;
+                margin-top: 10px;
+                transition: .3s;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -41,11 +322,29 @@
         flex-direction: row;
 
         .post {
-          width: 65%;
+          width: 68%;
+          margin-right: 20px;
+
+          .new-post {
+            .card {
+              #form-new-post {
+                flex-direction: row;
+
+                .form-input {
+                  margin-right: 24px;
+                }
+  
+                .form-button {
+                  width: auto;
+                  margin-top: 0;
+                }
+              }
+            }
+          }
         }
 
         .recommended {
-          width: 35%;
+          width: 32%;
         }
       }
     }
