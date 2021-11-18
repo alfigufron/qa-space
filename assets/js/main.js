@@ -1,23 +1,68 @@
-const btnToggle = document.getElementById('btn-toggle');
-const navContent = document.getElementById('nav-content');
+const btnToggle = document.getElementById("btn-toggle");
+const navContent = document.getElementById("nav-content");
 
 // Resize Screen
-window.addEventListener('resize', function () {
-  sidebarSizeScreen();
+window.addEventListener("resize", function () {
+	sidebarSizeScreen();
 });
 
-btnToggle.addEventListener('click', function () {
-  navContent.classList.toggle('mobile-toggled');
-})
+btnToggle.addEventListener("click", function () {
+	navContent.classList.toggle("mobile-toggled");
+});
 
 function sidebarSizeScreen() {
-  const width = window.innerWidth;
+	const width = window.innerWidth;
 
-  if (width > 1200) {
-    navContent.classList.remove('mobile-toggled');
-  }
+	if (width > 1200) {
+		navContent.classList.remove("mobile-toggled");
+	}
 }
 
+// Splider
+document.addEventListener("DOMContentLoaded", function () {
+	let splide = new Splide(".splide", {
+		type: "loop",
+		pagination: false,
+		padding: "12rem",
+		classes: {
+			arrows: "splide__arrows",
+			arrow: "splide__arrow",
+			prev: "splide__arrow--prev",
+			next: "splide__arrow--next",
+		},
+		breakpoints: {
+			992: {
+				padding: 0,
+			},
+		},
+	});
+	splide.mount();
+});
+
+// Tab at profile.html
+function openTab(e, tabName) {
+	let i, tabcontents, tablinks;
+
+	tabcontents = document.getElementsByClassName("tab-content");
+	for (i = 0; i < tabcontents.length; i++) {
+		tabcontents[i].style.display = "none";
+	}
+
+	tablinks = document.getElementsByClassName("tab-link");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(
+			" btn-primary",
+			" btn-question"
+		);
+	}
+
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	document.getElementById(tabName).style.display = "block";
+	e.currentTarget.className = e.currentTarget.className.replace(
+		" btn-question",
+		" btn-primary"
+	);
+}
 
 const buttonLike = document.getElementById('like');
 
@@ -36,3 +81,5 @@ buttonLike.addEventListener('click', function (e) {
 
   console.log(icon.src);
 })
+
+document.getElementById("default").click();

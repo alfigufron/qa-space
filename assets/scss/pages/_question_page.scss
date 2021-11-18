@@ -19,7 +19,7 @@
     .content {
       display: flex;
       flex-direction: column;
-      padding: 20px 60px 0 60px;
+      padding: 20px 60px 60px 60px;
 
       .post, .recommended {
         width: 100%;
@@ -61,6 +61,7 @@
                   height: 44px;
                   border: 1.8px transparent solid;
                   transition: all .4s;
+                  font-size: 16px;
 
                   &:active, &:focus, &:focus-visible {
                     border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
@@ -112,10 +113,11 @@
             }
           }
 
-          .footer {
+          .question-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: none;
 
             &.detail {
               margin-top: 40px;
@@ -255,6 +257,28 @@
               .text {
                 margin-top: 10px;
                 line-height: 1.8;
+              }
+
+              .rating {
+                margin-top: 18px;
+                display: flex;
+                align-items: center;
+
+                .star {
+                  margin-right: 10px;
+
+                  img {
+                    width: 22px;
+                  }
+                }
+
+                .star-count {
+                  h3 {
+                    padding-left: 10px;
+                    margin: 0;
+                    color: $warning-color;
+                  }
+                }
               }
             }
           }

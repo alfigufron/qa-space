@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home | Brainly Reborn</title>
+
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body id="profile_page">
+		<div id="navbar">
+			<div id="nav-content">
+				<div class="nav-brand">
+					<h2 class="text-primary">
+						Brainly <span class="text-secondary">Reborn</span>
+					</h2>
+				</div>
+
+				<div class="nav-menu">
+					<div class="nav-item">
+						<a href="./index.html">Beranda</a>
+					</div>
+
+					<div class="nav-item active">
+						<a href="./profile.html">Profil</a>
+					</div>
+
+					<div class="nav-item">
+						<a href="./index.html#about">Tentang</a>
+					</div>
+
+					<div class="nav-item">
+						<a href="./question.html">Pertanyaan</a>
+					</div>
+				</div>
+
+				<div class="nav-search">
+					<div class="form-search">
+						<input type="text" placeholder="Apa pertanyaan kamu?" />
+						<button type="button">
+							<img src="./assets/img/icon/search.svg" alt="search-icon" />
+						</button>
+					</div>
+				</div>
+
+				<div class="nav-toggle">
+					<button id="btn-toggle">
+						<img src="./assets/img/icon/menu-3-line.svg" alt="menu-icon" />
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<section id="profile">
+			<div class="header">
+				<img src="./assets/img/icon/profile.png" alt="profile" />
+				<h1>Profile</h1>
+			</div>
+
+			<div class="content">
+				<div class="left">
+					<div class="card">
+						<div class="card-header">
+							<img
+								src="./assets/img/landing-page/question-profile.svg"
+								alt="Rizka Amalia"
+							/>
+							<div class="detail">
+								<p class="question-name">Rizka Amalia</p>
+								<p class="question-position">rizka@gmail.com</p>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="answer">
+								<h3 class="counter">32</h3>
+								<class class="title"> Jawaban </class>
+							</div>
+							<div class="question">
+								<h3 class="counter">17</h3>
+								<class class="title"> Pertanyaan </class>
+							</div>
+							<div class="review">
+								<h3 class="counter">117</h3>
+								<class class="title"> Reviews </class>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="summary">
+					<div class="tab">
+						<button
+							class="btn-md btn-question tab-link"
+							onclick="openTab(event, 'answer')"
+							id="default"
+						>
+							Jawaban
+						</button>
+						<button
+							class="btn-md btn-question tab-link"
+							onclick="openTab(event, 'question')"
+						>
+							Pertanyaan
+						</button>
+						<button
+							class="btn-md btn-question tab-link"
+							onclick="openTab(event, 'review')"
+						>
+							Reviews
+						</button>
+					</div>
+					<div class="summary-content">
+						<div id="answer" class="tab-content">
+							<div class="container">
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">
+												Rizka Amalia <span class="position">menjawab</span>
+												<a href="./question-detail.html"
+													>Apa yang dimaksud dengan IoT (Internet Of Things)</a
+												>
+											</p>
+											<p class="question-position">Penjawab</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Internet of things adalah semua perangkat dan benda yang
+											melakukan transfer dan juga transmisi data melalui
+											jaringan wireless dan internet.
+										</p>
+									</div>
+									<div class="card-footer">
+										<div class="like">
+											<img src="./assets/img/icon/love.svg" alt="Like" />
+											<span>1.5</span>
+										</div>
+										<div class="star">
+											<img
+												src="./assets/img/icon/star-filled.svg"
+												alt="Rating"
+											/>
+											<span>4.5</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">
+												Rizka Amalia <span class="position">menjawab</span>
+												<a href="./question-detail.html"
+													>Apa yang dimaksud dengan IoT (Internet Of Things)</a
+												>
+											</p>
+											<p class="question-position">Penjawab</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Internet of things adalah semua perangkat dan benda yang
+											melakukan transfer dan juga transmisi data melalui
+											jaringan wireless dan internet.
+										</p>
+									</div>
+									<div class="card-footer">
+										<div class="like">
+											<img src="./assets/img/icon/love.svg" alt="Like" />
+											<span>1.5</span>
+										</div>
+										<div class="star">
+											<img
+												src="./assets/img/icon/star-filled.svg"
+												alt="Rating"
+											/>
+											<span>4.5</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">
+												Rizka Amalia <span class="position">menjawab</span>
+												<a href="./question-detail.html"
+													>Apa yang dimaksud dengan IoT (Internet Of Things)</a
+												>
+											</p>
+											<p class="question-position">Penjawab</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Internet of things adalah semua perangkat dan benda yang
+											melakukan transfer dan juga transmisi data melalui
+											jaringan wireless dan internet.
+										</p>
+									</div>
+									<div class="card-footer">
+										<div class="like">
+											<img src="./assets/img/icon/love.svg" alt="Like" />
+											<span>1.5</span>
+										</div>
+										<div class="star">
+											<img
+												src="./assets/img/icon/star-filled.svg"
+												alt="Rating"
+											/>
+											<span>4.5</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="question" class="tab-content">
+							<div class="container">
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">Rizka Amalia</p>
+											<p class="question-position">Bertanya</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Apa yang dimaksud dengan IoT (Internet of Things) dan
+											sebutkan contohnya?
+										</p>
+									</div>
+									<div class="card-footer">
+										<a href="./question-detail.html"
+											><img src="./assets/img/icon/answer.svg" alt="Answer" />
+											<span class="text">Jawaban</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">Rizka Amalia</p>
+											<p class="question-position">Bertanya</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Apa yang dimaksud dengan IoT (Internet of Things) dan
+											sebutkan contohnya?
+										</p>
+									</div>
+									<div class="card-footer">
+										<a href="./question-detail.html"
+											><img src="./assets/img/icon/answer.svg" alt="Answer" />
+											<span class="text">Jawaban</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="review" class="tab-content">
+							<div class="container">
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">Rizka Amalia</p>
+											<p class="question-position">Penanya</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Sangat membantu dalam pertanyaan saya.
+										</p>
+									</div>
+									<div class="card-footer">
+										<img src="./assets/img/icon/star-filled.svg" alt="Rating" />
+										<span>4.5</span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">Rizka Amalia</p>
+											<p class="question-position">Penanya</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Sangat membantu dalam pertanyaan saya.
+										</p>
+									</div>
+									<div class="card-footer">
+										<img src="./assets/img/icon/star-filled.svg" alt="Rating" />
+										<span>4.5</span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">Rizka Amalia</p>
+											<p class="question-position">Penanya</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Sangat membantu dalam pertanyaan saya.
+										</p>
+									</div>
+									<div class="card-footer">
+										<img src="./assets/img/icon/star-filled.svg" alt="Rating" />
+										<span>4.5</span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<img
+											src="./assets/img/landing-page/question-profile.svg"
+											alt="Rizka Amalia"
+										/>
+										<div class="detail">
+											<p class="question-name">Rizka Amalia</p>
+											<p class="question-position">Penanya</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											Sangat membantu dalam pertanyaan saya.
+										</p>
+									</div>
+									<div class="card-footer">
+										<img src="./assets/img/icon/star-filled.svg" alt="Rating" />
+										<span>4.5</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer" class="footer">
+			<div class="center">
+				<h1 class="title text-light">Mau nanya apa?</h1>
+				<a href="#" class="btn btn-primary">Tanya Sekarang</a>
+			</div>
+			<div class="bottom">
+				<div class="left">
+					<h2 class="text-light">
+						Brainly <span class="text-secondary">Reborn</span>
+					</h2>
+					<div class="footer-links">
+						<a href="./index.html" class="text-light">Kategori</a>
+						<a href="./index.html#about" class="text-light">Tentang</a>
+						<a href="./question.html" class="text-light">Pertanyaan</a>
+					</div>
+				</div>
+				<div class="right">
+					<p class="text-light">©2021 Brainly Reborn. All Rights Reserved</p>
+				</div>
+			</div>
+		</section>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
