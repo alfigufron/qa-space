@@ -19,25 +19,28 @@ function sidebarSizeScreen() {
 }
 
 // Splider
-document.addEventListener("DOMContentLoaded", function () {
-	let splide = new Splide(".splide", {
-		type: "loop",
-		pagination: false,
-		padding: "12rem",
-		classes: {
-			arrows: "splide__arrows",
-			arrow: "splide__arrow",
-			prev: "splide__arrow--prev",
-			next: "splide__arrow--next",
-		},
-		breakpoints: {
-			992: {
-				padding: 0,
+const splideContainer = document.getElementById("landing_page");
+if (splideContainer != null) {
+	document.addEventListener("DOMContentLoaded", function () {
+		let splide = new Splide(".splide", {
+			type: "loop",
+			pagination: false,
+			padding: "12rem",
+			classes: {
+				arrows: "splide__arrows",
+				arrow: "splide__arrow",
+				prev: "splide__arrow--prev",
+				next: "splide__arrow--next",
 			},
-		},
+			breakpoints: {
+				992: {
+					padding: 0,
+				},
+			},
+		});
+		splide.mount();
 	});
-	splide.mount();
-});
+}
 
 // Tab at profile.html
 function openTab(e, tabName) {
@@ -63,22 +66,27 @@ function openTab(e, tabName) {
 	);
 }
 
+const profile = document.getElementById("default");
+if (profile != null) {
+	profile.click();
+}
+
 const buttonLike = document.getElementById("like");
 
-buttonLike.addEventListener("click", function (e) {
-	e.preventDefault();
+if (buttonLike != null) {
+	buttonLike.addEventListener("click", function (e) {
+		e.preventDefault();
 
-	const icon = buttonLike.children[0];
+		const icon = buttonLike.children[0];
 
-	if (buttonLike.classList.contains("liked")) {
-		buttonLike.classList.remove("liked");
-		icon.src = "./assets/img/icon/heart.svg";
-	} else {
-		buttonLike.classList.add("liked");
-		icon.src = "./assets/img/icon/heart-red.svg";
-	}
+		if (buttonLike.classList.contains("liked")) {
+			buttonLike.classList.remove("liked");
+			icon.src = "./assets/img/icon/heart.svg";
+		} else {
+			buttonLike.classList.add("liked");
+			icon.src = "./assets/img/icon/heart-red.svg";
+		}
 
-	console.log(icon.src);
-});
-
-document.getElementById("default").click();
+		console.log(icon.src);
+	});
+}

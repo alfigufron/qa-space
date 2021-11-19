@@ -62,10 +62,12 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   margin-bottom: 0;
   gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #landing_page .header .left {
-  margin-top: 6rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
@@ -222,9 +224,12 @@ h1, h2, h3, h4, h5, h6 {
   #landing_page .category .right .category-card {
     display: -ms-grid;
     display: grid;
-    gap: 13px;
+    gap: 25px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  #landing_page .category .right .category-card .card {
+    padding: 25px;
   }
 }
 
@@ -1239,6 +1244,14 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
+#profile_page #profile .summary .summary-content #answer .container .card .card-footer div,
+#profile_page #profile .summary .summary-content #question .container .card .card-footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
 #profile_page #profile .summary .summary-content #question .container .card .card-footer a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1374,7 +1387,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #auth section .left {
@@ -1405,18 +1418,23 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
 }
 
 #auth section .right .card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: 90%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 #auth section .right .card .card-header .card-title {
@@ -1464,6 +1482,7 @@ h1, h2, h3, h4, h5, h6 {
 #auth section .right .card .card-footer .card-text {
   font-weight: 400;
   color: #888888;
+  text-align: center;
 }
 
 #auth section .right .card .card-footer .card-links {
