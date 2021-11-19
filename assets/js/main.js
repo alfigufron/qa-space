@@ -56,7 +56,6 @@ function openTab(e, tabName) {
 		);
 	}
 
-	// Show the current tab, and add an "active" class to the button that opened the tab
 	document.getElementById(tabName).style.display = "block";
 	e.currentTarget.className = e.currentTarget.className.replace(
 		" btn-question",
@@ -64,22 +63,22 @@ function openTab(e, tabName) {
 	);
 }
 
-const buttonLike = document.getElementById('like');
+const buttonLike = document.getElementById("like");
 
-buttonLike.addEventListener('click', function (e) {
-  e.preventDefault();
-  
-  const icon = buttonLike.children[0];
+buttonLike.addEventListener("click", function (e) {
+	e.preventDefault();
 
-  if (buttonLike.classList.contains('liked')) {
-    buttonLike.classList.remove('liked');
-    icon.src = './assets/img/icon/heart.svg'
-  } else {
-    buttonLike.classList.add('liked');
-    icon.src = './assets/img/icon/heart-red.svg'
-  }
+	const icon = buttonLike.children[0];
 
-  console.log(icon.src);
-})
+	if (buttonLike.classList.contains("liked")) {
+		buttonLike.classList.remove("liked");
+		icon.src = "./assets/img/icon/heart.svg";
+	} else {
+		buttonLike.classList.add("liked");
+		icon.src = "./assets/img/icon/heart-red.svg";
+	}
+
+	console.log(icon.src);
+});
 
 document.getElementById("default").click();

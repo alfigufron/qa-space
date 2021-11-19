@@ -1362,6 +1362,138 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#auth {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f6fb;
+}
+
+#auth section {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+#auth section .left {
+  width: 50%;
+  background-image: url("../img/auth.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#auth section .left .title {
+  font-size: 2.3rem;
+  color: #ffffff;
+}
+
+#auth section .left .subtitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+#auth section .right {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+#auth section .right .card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px;
+}
+
+#auth section .right .card .card-header .card-title {
+  font-size: 1.8rem;
+  color: #34364a;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+#auth section .right .card .card-header .card-subtitle {
+  color: #888888;
+}
+
+#auth section .right .card .card-body .form-group {
+  display: block;
+  margin: 20px 0;
+}
+
+#auth section .right .card .card-body .form-group .form-label {
+  font-size: 0.9rem;
+  color: #34364a;
+  display: block;
+  font-size: 400;
+  margin-bottom: 5px;
+}
+
+#auth section .right .card .card-body .form-group .form-input {
+  padding: 13px 20px;
+  background-color: #f4f6fb;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 50px;
+}
+
+#auth section .right .card .card-body .form-group .form-input:focus {
+  outline: 1px solid #2447f9;
+}
+
+#auth section .right .card .card-body .btn {
+  width: 100%;
+}
+
+#auth section .right .card .card-footer .card-text {
+  font-weight: 400;
+  color: #888888;
+}
+
+#auth section .right .card .card-footer .card-links {
+  color: #2447f9;
+}
+
+@media only screen and (min-width: 600px) {
+  #auth section .right .card {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #auth section .left {
+    display: block;
+  }
+  #auth section .right {
+    width: 50%;
+  }
+  #auth section .right .card {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #auth section .right .card {
+    width: 60%;
+  }
+}
+
 #navbar {
   width: 100%;
   position: absolute;
