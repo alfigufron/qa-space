@@ -1015,7 +1015,7 @@ h1, h2, h3, h4, h5, h6 {
   #question-page #question-list .content {
     padding: 20px 60px 60px 60px;
   }
-  #question-page #question-list .content .card {
+  #question-page #question-list .content .post .question-post .card {
     padding: 40px;
   }
 }

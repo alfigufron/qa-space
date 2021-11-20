@@ -398,9 +398,12 @@
 			@media #{$breakpoint-xs} {
 				.content {
 					padding: 20px 60px 60px 60px;
-
-					.card {
-						padding: 40px;
+					.post {
+						.question-post {
+							.card {
+								padding: 40px;
+							}
+						}
 					}
 				}
 			}
