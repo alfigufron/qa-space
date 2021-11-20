@@ -612,10 +612,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 60px 60px 60px;
+  padding: 20px 20px 60px 20px;
 }
 
-#question-page #question-list .content .post, #question-page #question-list .content .recommended {
+#question-page #question-list .content .post,
+#question-page #question-list .content .recommended {
   width: 100%;
 }
 
@@ -666,11 +667,11 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   height: 44px;
   border: 1.8px transparent solid;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   font-size: 16px;
 }
 
@@ -697,7 +698,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #question-page #question-list .content .post .question-post .card {
-  padding: 40px;
+  padding: 20px;
 }
 
 #question-page #question-list .content .post .question-post .card .author {
@@ -722,6 +723,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+#question-page #question-list .content .post .question-post .flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #question-page #question-list .content .post .question-post .question-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -733,6 +741,11 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   background: none;
+}
+
+#question-page #question-list .content .post .question-post .question-footer .answer .btn {
+  display: inline-block;
+  text-align: center;
 }
 
 #question-page #question-list .content .post .question-post .question-footer.detail {
@@ -760,7 +773,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #question-page #question-list .content .post .question-post .question-footer.detail .icon #like.liked {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 #question-page #question-list .content .post .question-post .question-footer .rating h4 {
@@ -776,6 +789,15 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 768px) {
   #question-page #question-list .content .post .question-post .question-footer.detail .icon a span {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #question-page #question-list .content .post .question-post .flex-column {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -826,11 +848,11 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   height: 44px;
   border: 1.8px transparent solid;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #question-page #question-list .content .post .question-post .comment .new-comment #form-new-comment .form-input input:active, #question-page #question-list .content .post .question-post .comment .new-comment #form-new-comment .form-input input:focus, #question-page #question-list .content .post .question-post .comment .new-comment #form-new-comment .form-input input:focus-visible {
@@ -956,8 +978,8 @@ h1, h2, h3, h4, h5, h6 {
 #question-page #question-list .content .recommended .card .list .question h3 {
   margin: 0;
   margin-top: 10px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media only screen and (min-width: 992px) {
@@ -986,6 +1008,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   #question-page #question-list .content .recommended {
     width: 32%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (min-width: 600px) {
+  #question-page #question-list .content {
+    padding: 20px 60px 60px 60px;
+  }
+  #question-page #question-list .content .card {
+    padding: 40px;
   }
 }
 

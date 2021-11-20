@@ -1,376 +1,409 @@
 #question-page {
-  width: 100%;
-  min-height: 100vh;
-  background-color: $background-color;
-  
-  #question-list {
-    width: 100%;
-    padding-top: 200px;
+	width: 100%;
+	min-height: 100vh;
+	background-color: $background-color;
 
-    .header {
-      text-align: center;
+	#question-list {
+		width: 100%;
+		padding-top: 200px;
 
-      h1 {
-        font-size: 2rem;
-        margin-top: 16px;
-      }
-    }
+		.header {
+			text-align: center;
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 60px 60px 60px;
+			h1 {
+				font-size: 2rem;
+				margin-top: 16px;
+			}
+		}
 
-      .post, .recommended {
-        width: 100%;
-      }
+		.content {
+			display: flex;
+			flex-direction: column;
+			padding: 20px 20px 60px 20px;
 
-      .post {
-        margin-bottom: 20px;
+			.post,
+			.recommended {
+				width: 100%;
+			}
 
-        .new-post {
-          .card {
-            display: flex;
-            align-items: center;
+			.post {
+				margin-bottom: 20px;
 
-            .profile-picture {
-              img {
-                border-radius: 50%;
-                width: 70px;
-              }
-            }
+				.new-post {
+					.card {
+						display: flex;
+						align-items: center;
 
-            #form-new-post {
-              display: flex;
-              flex-direction: column;
-              align-items: stretch;
-              margin-left: 20px;
-              width: 100%;
+						.profile-picture {
+							img {
+								border-radius: 50%;
+								width: 70px;
+							}
+						}
 
-              .form-input {
-                flex: 1;
-                margin-right: 0;
+						#form-new-post {
+							display: flex;
+							flex-direction: column;
+							align-items: stretch;
+							margin-left: 20px;
+							width: 100%;
 
-                input {
-                  width: 100%;
-                  box-sizing: border-box;
-                  border: none;
-                  border-radius: 20px;
-                  padding: 10px 20px;
-                  background-color: #F3F3F3;
-                  height: 44px;
-                  border: 1.8px transparent solid;
-                  transition: all .4s;
-                  font-size: 16px;
+							.form-input {
+								flex: 1;
+								margin-right: 0;
 
-                  &:active, &:focus, &:focus-visible {
-                    border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
-                    outline: none;
-                  }
-                }
-              }
+								input {
+									width: 100%;
+									box-sizing: border-box;
+									border: none;
+									border-radius: 20px;
+									padding: 10px 20px;
+									background-color: #f3f3f3;
+									height: 44px;
+									border: 1.8px transparent solid;
+									transition: all 0.4s;
+									font-size: 16px;
 
-              .form-button {
-                margin-top: 20px;
-                width: 100%;
+									&:active,
+									&:focus,
+									&:focus-visible {
+										border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
+										outline: none;
+									}
+								}
+							}
 
-                button {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
+							.form-button {
+								margin-top: 20px;
+								width: 100%;
 
-        .question-post {
-          margin-top: 20px;
+								button {
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
 
-          &.detail {
-            margin-top: 0;
-          }
+				.question-post {
+					margin-top: 20px;
 
-          .card {
-            padding: 40px;
+					&.detail {
+						margin-top: 0;
+					}
 
-            .author {
-              display: flex;
-              align-items: center;
-  
-              .profile-picture {
-                img {
-                  border-radius: 50%;
-                  width: 70px;
-                }
-              }
-  
-              .detail-profile {
-                margin-left: 20px;
-  
-                .name {
-                  margin: 0;
-                }
-              }
-            }
-          }
+					.card {
+						padding: 20px;
 
-          .question-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: none;
+						.author {
+							display: flex;
+							align-items: center;
 
-            &.detail {
-              margin-top: 40px;
-              border-bottom: 2px rgba($color: $dark-color, $alpha: .4) solid;
-              padding-bottom: 40px;
+							.profile-picture {
+								img {
+									border-radius: 50%;
+									width: 70px;
+								}
+							}
 
-              .icon {
-                a {
-                  display: flex;
-                  align-items: center;
-                  font-weight: 500;
+							.detail-profile {
+								margin-left: 20px;
 
-                  img {
-                    margin-right: 10px;
-                  }
+								.name {
+									margin: 0;
+								}
+							}
+						}
+					}
 
-                  span {
-                    display: none;
-                  }
-                }
+					.flex-column {
+						flex-direction: column;
+					}
 
-                #like {
-                  &.liked {
-                    color: #FF0000;
-                  }
-                }
-              }
-            }
+					.question-footer {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						background: none;
 
-            .rating {
-              h4 {
-                display: flex;
-                
-                img {
-                  margin-right: 6px;
-                } 
-              }
-            }
+						.answer {
+							.btn {
+								display: inline-block;
+								text-align: center;
+							}
+						}
 
-            @media #{$breakpoint-sm} {
-              &.detail {
-                .icon {
-                  a {
-                    span {
-                      display: block;
-                    }
-                  }
-                }
-              }
-            }
-          }
+						&.detail {
+							margin-top: 40px;
+							border-bottom: 2px rgba($color: $dark-color, $alpha: 0.4) solid;
+							padding-bottom: 40px;
 
-          .comment {
-            margin-top: 40px;
+							.icon {
+								a {
+									display: flex;
+									align-items: center;
+									font-weight: 500;
 
-            .new-comment {
-              display: flex;
-              align-items: center;
+									img {
+										margin-right: 10px;
+									}
 
-              .profile-picture {
-                img {
-                  border-radius: 50%;
-                  width: 70px;
-                }
-              }
-  
-              #form-new-comment {
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                margin-left: 20px;
-                width: 100%;
-  
-                .form-input {
-                  flex: 1;
-                  margin-right: 0;
-  
-                  input {
-                    width: 100%;
-                    box-sizing: border-box;
-                    border: none;
-                    border-radius: 20px;
-                    padding: 10px 20px;
-                    background-color: #F3F3F3;
-                    height: 44px;
-                    border: 1.8px transparent solid;
-                    transition: all .4s;
-  
-                    &:active, &:focus, &:focus-visible {
-                      border: 1.8px rgba($color: $primary-color, $alpha: 1) solid;
-                      outline: none;
-                    }
-                  }
-                }
-  
-                .form-button {
-                  margin-top: 20px;
-                  width: 100%;
-  
-                  button {
-                    width: 100%;
-                  }
-                }
+									span {
+										display: none;
+									}
+								}
 
-                @media #{$breakpoint-md} {
-                  flex-direction: row;
+								#like {
+									&.liked {
+										color: #ff0000;
+									}
+								}
+							}
+						}
 
-                  .form-input {
-                    margin-right: 24px;
-                  }
-    
-                  .form-button {
-                    width: auto;
-                    margin-top: 0;
-                  }
-                }
-              }
-            }
+						.rating {
+							h4 {
+								display: flex;
 
-            .post-comment {
-              margin-top: 40px;
+								img {
+									margin-right: 6px;
+								}
+							}
+						}
 
-              .author {
-                .profile-picture {
-                  img {
-                    width: 60px;
-                  }
-                }
+						@media #{$breakpoint-sm} {
+							&.detail {
+								.icon {
+									a {
+										span {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
 
-                .detail-profile {
-                  span {
-                    font-size: 14px;
-                  }
-                }
-              }
+					@media #{$breakpoint-xs} {
+						.flex-column {
+							flex-direction: row;
+						}
+					}
 
-              .text {
-                margin-top: 10px;
-                line-height: 1.8;
-              }
+					.comment {
+						margin-top: 40px;
 
-              .rating {
-                margin-top: 18px;
-                display: flex;
-                align-items: center;
+						.new-comment {
+							display: flex;
+							align-items: center;
 
-                .star {
-                  margin-right: 10px;
+							.profile-picture {
+								img {
+									border-radius: 50%;
+									width: 70px;
+								}
+							}
 
-                  img {
-                    width: 22px;
-                  }
-                }
+							#form-new-comment {
+								display: flex;
+								flex-direction: column;
+								align-items: stretch;
+								margin-left: 20px;
+								width: 100%;
 
-                .star-count {
-                  h3 {
-                    padding-left: 10px;
-                    margin: 0;
-                    color: $warning-color;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
+								.form-input {
+									flex: 1;
+									margin-right: 0;
 
-      .recommended {
-        text-align: center;
+									input {
+										width: 100%;
+										box-sizing: border-box;
+										border: none;
+										border-radius: 20px;
+										padding: 10px 20px;
+										background-color: #f3f3f3;
+										height: 44px;
+										border: 1.8px transparent solid;
+										transition: all 0.4s;
 
-        .card {
-          padding: 40px;
-  
-          .title {
-            border-bottom: 2px $dark-color solid;
-            padding-bottom: 16px;
-            margin: 10px 0;
-          }
-  
-          .list {
-            text-align: left;
-  
-            .question {
-              display: block;
-              margin-top: 34px;
+										&:active,
+										&:focus,
+										&:focus-visible {
+											border: 1.8px rgba($color: $primary-color, $alpha: 1)
+												solid;
+											outline: none;
+										}
+									}
+								}
 
-              &:hover {
-                h3 {
-                  color: $primary-color;
-                }
-              }
+								.form-button {
+									margin-top: 20px;
+									width: 100%;
 
-              .author {
-                display: flex;
-                align-items: center;
+									button {
+										width: 100%;
+									}
+								}
 
-                .profile-picture {
-                  img {
-                    border-radius: 50%;
-                    width: 70px;
-                  }
-                }
+								@media #{$breakpoint-md} {
+									flex-direction: row;
 
-                .detail-profile {
-                  margin-left: 20px;
+									.form-input {
+										margin-right: 24px;
+									}
 
-                  .name {
-                    margin: 0;
-                  }
-                }
-              }
+									.form-button {
+										width: auto;
+										margin-top: 0;
+									}
+								}
+							}
+						}
 
-              h3 {
-                margin: 0;
-                margin-top: 10px;
-                transition: .3s;
-              }
-            }
-          }
-        }
-      }
-    }
+						.post-comment {
+							margin-top: 40px;
 
-    @media #{$breakpoint-md} {
-      .content {
-        flex-direction: row;
+							.author {
+								.profile-picture {
+									img {
+										width: 60px;
+									}
+								}
 
-        .post {
-          width: 68%;
-          margin-right: 20px;
+								.detail-profile {
+									span {
+										font-size: 14px;
+									}
+								}
+							}
 
-          .new-post {
-            .card {
-              #form-new-post {
-                flex-direction: row;
+							.text {
+								margin-top: 10px;
+								line-height: 1.8;
+							}
 
-                .form-input {
-                  margin-right: 24px;
-                }
-  
-                .form-button {
-                  width: auto;
-                  margin-top: 0;
-                }
-              }
-            }
-          }
-        }
+							.rating {
+								margin-top: 18px;
+								display: flex;
+								align-items: center;
 
-        .recommended {
-          width: 32%;
-        }
-      }
-    }
-  }
+								.star {
+									margin-right: 10px;
+
+									img {
+										width: 22px;
+									}
+								}
+
+								.star-count {
+									h3 {
+										padding-left: 10px;
+										margin: 0;
+										color: $warning-color;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.recommended {
+				text-align: center;
+
+				.card {
+					padding: 40px;
+
+					.title {
+						border-bottom: 2px $dark-color solid;
+						padding-bottom: 16px;
+						margin: 10px 0;
+					}
+
+					.list {
+						text-align: left;
+
+						.question {
+							display: block;
+							margin-top: 34px;
+
+							&:hover {
+								h3 {
+									color: $primary-color;
+								}
+							}
+
+							.author {
+								display: flex;
+								align-items: center;
+
+								.profile-picture {
+									img {
+										border-radius: 50%;
+										width: 70px;
+									}
+								}
+
+								.detail-profile {
+									margin-left: 20px;
+
+									.name {
+										margin: 0;
+									}
+								}
+							}
+
+							h3 {
+								margin: 0;
+								margin-top: 10px;
+								transition: 0.3s;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@media #{$breakpoint-md} {
+			.content {
+				flex-direction: row;
+
+				.post {
+					width: 68%;
+					margin-right: 20px;
+
+					.new-post {
+						.card {
+							#form-new-post {
+								flex-direction: row;
+
+								.form-input {
+									margin-right: 24px;
+								}
+
+								.form-button {
+									width: auto;
+									margin-top: 0;
+								}
+							}
+						}
+					}
+				}
+
+				.recommended {
+					width: 32%;
+				}
+			}
+
+			@media #{$breakpoint-xs} {
+				.content {
+					padding: 20px 60px 60px 60px;
+
+					.card {
+						padding: 40px;
+					}
+				}
+			}
+		}
+	}
 }
